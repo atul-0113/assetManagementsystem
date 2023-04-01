@@ -1,0 +1,95 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(
+        #56c4ff, 
+        #fff,
+        #20acf7,
+        #0981c6c5,
+        #20acf7, 
+        #fff,
+        #0982c6,
+        #fff,
+        #20acf7,
+        #0981c6c5,
+        #20acf7, 
+        #fff,
+        #56c4ff );
+    /* background-image: url("https://media.wired.com/photos/59265a80cefba457b0799ad7/191:100/w_1280,c_limit/FastRadioBursts.gif"); */
+    object-fit: contain;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+  
+  form {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #efefef; */
+    border-radius: 1rem;
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); */
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color:#0b9dec;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:#20acf7;
+  }
+  
+  .subContainer{
+    display: flex;
+    height: 65%;
+    width: 45%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    background-image: url("https://media.wired.com/photos/59265a80cefba457b0799ad7/191:100/w_1280,c_limit/FastRadioBursts.gif");
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  }
+  .images{
+    display: flex;
+    width: 30rem;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    /* background: radial-gradient(#56c4ff, #20acf7,#0981c6c5, #0982c6,#0981c6c5,#20acf7, #56c4ff ); */
+    background-image: url("https://listany-prod.s3.amazonaws.com/images/tracetsite/accountingforfixedassetsunderifrs.png");
+    object-fit: cover;
+    background-repeat: no-repeat;   
+} 
