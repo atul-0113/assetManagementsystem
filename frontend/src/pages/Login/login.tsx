@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Routes } from "../../constants/user.routes";
 import { useNavigate } from "react-router-dom";
 import {FaUserLock} from "react-icons/fa"
@@ -19,7 +19,6 @@ function Login() {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    console.log(`Email: ${email}, Password: ${password}`);
     localStorage.setItem(
       "token",
       JSON.stringify({

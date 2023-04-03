@@ -1,0 +1,95 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    height: 60vh;
+    margin-top: 10px;
+}
+.userList{
+    display: flex;
+    flex-direction: column;
+    // height: 60vh;
+}
+.listHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: #56c4ff;
+    .image{
+        width: 18rem;
+        padding: 0 1rem 0 1rem;
+    }
+    .email{
+        width: 50rem;
+        font-size: 16px;
+        text-align: start;
+        color: white;
+        margin: 1rem;
+        font-weight: 900;   
+    }
+    .name{
+        width: 45rem;
+        font-size: 16px;
+        margin: 1rem;
+        color: white;
+        font-weight: 900;
+    }
+    .code{
+        width: 20rem;
+        font-size: 16px;
+        color: white;
+        margin: 1rem;
+        text-align: center;
+        font-weight: 900;
+    }
+    .status{
+        width: 20rem;
+        font-size: 16px;
+        color: white;;
+        margin: 1rem;
+        font-weight: 900;
+    }
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    .image{
+            background-color:#dbdada43;
+            border-radius: 1rem;
+            width: 10rem;
+        img{
+        border-radius: 1rem;
+        width: 5rem;
+        height: 5rem;
+        padding: 5px;
+        object-fit: cover;
+        }
+    }
+    .email{
+        width: 50rem;
+        font-size: 16px;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .name{
+        width: 45rem;
+        font-size: 16px;
+        margin: 1rem;
+        font-weight: 500;
+    }
+    .code{
+        width: 20rem;
+        font-size: 16px;
+        margin: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .status{
+        width: 20rem;
+        font-size: 16px;
+        margin: 1rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,18 @@
+.main{
+    display: flex;
+    flex-direction:column;
+    width: 99%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 1rem 0 0 0;
+    background-color: aliceblue;
+    .wraper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        // justify-content: center;
+
+    }
+}

@@ -1,3 +1,4 @@
 import {DashboardCards} from "./DashboardCards"
-
-export {DashboardCards};
+import { InventoryCard } from "./InventoryCard";
+import {UserAllotCard} from "./UserAllotCard"
+export {DashboardCards, InventoryCard , UserAllotCard};
