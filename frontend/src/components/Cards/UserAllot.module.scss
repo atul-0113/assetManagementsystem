@@ -1,16 +1,17 @@
+@import "../../scss/theme";
 .main {
   display: flex;
   flex-direction: column;
   width: 12rem;
   margin: 10px;
   padding: 5px;
-  background-color: #fff;
+  background-color: $themeWhite;
   background-image: url("https://t4.ftcdn.net/jpg/02/86/02/71/360_F_286027159_YL5SOlxRF6vqeaTYMsuo3xf1tcUXnAyB.jpg");
   // border-radius:10rem 10rem 0 0;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  box-shadow: 1px 1px 5px 5px rgb(184, 183, 183);
+  color: $themeWhite;
+  box-shadow: 1px 1px 5px 5px $grey2;
   .image {
     padding: 1rem;
     img {
@@ -22,8 +23,8 @@
   }
   &:hover {
     // background: linear-gradient(20deg, #56c4ff, #0982c6, #56c4ff);
-    box-shadow: 1px 1px 5px 5px #0982c6;
-    color: white;
+    box-shadow: 1px 1px 5px 5px $primaryDark;
+    color: $themeWhite;
     .image {
       padding: 0px;
       img {
@@ -39,8 +40,8 @@
 .description {
   margin: auto;
   width: 11rem;
-  background-color: #fff;
-  color: black;
+  background-color: $themeWhite;
+  color: $black;
   border-radius: 0 0 15px 15px;
   padding: 0 0 0 1rem;
 }

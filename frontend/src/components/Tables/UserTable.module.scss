@@ -1,3 +1,4 @@
+@import "../../scss/theme";
 .userList{
     display: flex;
     flex-direction: column;
@@ -6,12 +7,12 @@
 .listHeader{
     display: flex;
     flex-direction: row;
-    background-color: #56c4ff;
+    background-color: $primaryLight;
     .email{
         width: 50rem;
         font-size: 16px;
         text-align: start;
-        color: white;
+        color: $themeWhite;
         margin: 1rem;
         font-weight: 900;   
     }
@@ -19,13 +20,13 @@
         width: 45rem;
         font-size: 16px;
         margin: 1rem;
-        color: white;
+        color: $themeWhite;
         font-weight: 900;
     }
     .code{
         width: 20rem;
         font-size: 16px;
-        color: white;
+        color: $themeWhite;
         margin: 1rem;
         text-align: center;
         font-weight: 900;
@@ -33,7 +34,7 @@
     .status{
         width: 20rem;
         font-size: 16px;
-        color: white;;
+        color: $themeWhite;;
         margin: 1rem;
         font-weight: 900;
     }

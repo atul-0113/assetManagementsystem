@@ -1,5 +1,6 @@
 //Divider CSS
+@import "../../scss/theme";
 .dashed{
     width: 100%;
-    border-top: 0.5px solid #bbb;
+    border-top: 0.5px solid $grey2;
 }

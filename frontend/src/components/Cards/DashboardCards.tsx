@@ -24,7 +24,7 @@ export const DashboardCards = ({data}:any)=>{
         }
     }
     return(
-        <div className={classes.dashboardCard} style={{backgroundColor:data?.color, boxShadow:`3px 2px 4px 2px ${data?.color}`}}>
+        <div className={classes.dashboardCard} style={{backgroundColor:data?.color, boxShadow: "0px 0px 5px 2px rgba(0, 0, 0, 0.289)"}}>
             <div className={classes.icon}>
             {renderIcon()}
             </div>

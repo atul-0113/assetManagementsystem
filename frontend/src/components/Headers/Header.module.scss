@@ -1,3 +1,4 @@
+@import "../../scss/theme";
 .header{
     display: flex;
     flex-direction: row;
@@ -14,17 +15,17 @@
             margin: 20px;
             height: 2rem;
             width: 20rem;
-            background-color:#fff;
+            background-color:$themeWhite;
         }
     }
     .filter{
         font-size: 1.5rem;
-        color: black;
+        color:$black;
         padding:5px;
         cursor: pointer;
         &:hover{
             border-radius: 2rem;
-            background-color:rgba(47, 46, 46, 0.208);
+            background-color:$shadow-lightgrey;
         }
     }
     .viewSelector{
@@ -41,18 +42,18 @@
             justify-content: center;
             cursor: pointer;
             &:hover{
-                box-shadow: 1px 1px 5px 5px rgb(184, 183, 183);
+                box-shadow: 1px 1px 5px 5px $gray87;
             }
         }
         p:last-of-type{
-            background-color: rgb(45, 155, 45);
-            color: white;
+            background-color: $btnGreen;
+            color: $themeWhite;
             font-weight: 600;
         }
         p:first-of-type{
             // background: linear-gradient(0deg, #56c4ff, #0982c6, #56c4ff);
-            background-color: #f5f5f5;
-            color:black;
+            background-color: $themeWhite;
+            color:$black;
             font-weight: 600;
         }
     }

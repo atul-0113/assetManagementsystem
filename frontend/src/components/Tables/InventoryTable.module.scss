@@ -1,7 +1,8 @@
+@import "../../scss/theme";
 .main{
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    // background-color:$base-color;
     height: 60vh;
     margin-top: 10px;
 }
@@ -13,7 +14,7 @@
 .listHeader{
     display: flex;
     flex-direction: row;
-    background-color: #56c4ff;
+    background-color: $primaryLight;
     .image{
         width: 18rem;
         padding: 0 1rem 0 1rem;
@@ -22,7 +23,7 @@
         width: 50rem;
         font-size: 16px;
         text-align: start;
-        color: white;
+        color: $themeWhite;
         margin: 1rem;
         font-weight: 900;   
     }
@@ -30,13 +31,13 @@
         width: 45rem;
         font-size: 16px;
         margin: 1rem;
-        color: white;
+        color: $themeWhite;
         font-weight: 900;
     }
     .code{
         width: 20rem;
         font-size: 16px;
-        color: white;
+        color: $themeWhite;
         margin: 1rem;
         text-align: center;
         font-weight: 900;
@@ -44,7 +45,7 @@
     .status{
         width: 20rem;
         font-size: 16px;
-        color: white;;
+        color: $themeWhite;;
         margin: 1rem;
         font-weight: 900;
     }
@@ -56,7 +57,7 @@
     align-items: center;
     margin: 10px;
     .image{
-            background-color:#dbdada43;
+            background-color:$primaryDark;
             border-radius: 1rem;
             width: 10rem;
         img{

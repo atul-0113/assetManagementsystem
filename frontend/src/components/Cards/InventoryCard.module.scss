@@ -1,3 +1,4 @@
+@import "../../scss/theme";
 .main{
     display: flex;
     flex-direction: column;
@@ -5,11 +6,11 @@
     height:20rem;
     margin: 1rem;
     padding: 5px;
-    background-color:white;
+    background-color:$themeWhite;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 5px 5px rgb(184, 183, 183);
+    box-shadow: 1px 1px 5px 5px $grey2;
     .image{
         border-radius: 15px 15px 0 0;
         // height: 10rem;
@@ -24,9 +25,9 @@
     &:hover{
         width: 15.1rem;
         height: 20.1rem;
-        background: linear-gradient(20deg, #56c4ff, #0982c6, #56c4ff);
-        box-shadow: 1px 1px 5px 5px #0982c6;
-        color: white;
+        background: linear-gradient(20deg, $primaryLight, $primaryDark, $primaryLight);
+        box-shadow: 1px 1px 5px 5px $primaryDark;
+        color: $themeWhite;
         .statusStyle{
             p{
                 background-color: black;
@@ -51,7 +52,7 @@
             align-items: flex-end;
             text-align: center;
             padding: 5px;
-            background-color: white;
+            background-color: $themeWhite;
         }
     }
 }
