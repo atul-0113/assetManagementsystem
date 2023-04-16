@@ -8,19 +8,19 @@ export const DashboardCards = ({data}:any)=>{
         switch (data?.icon) {
             case "FcAndroidOs":
                 return <FcAndroidOs size={"30px"}/>
-                break;
+                // break;
             case "AiFillApple":
                 return <AiFillApple size={"30px"} color={data?.iconColor} />
-            break;
+            // break;
             case "FaWindows":
                 return <FaWindows size={"30px"} color={data?.iconColor}/>
-            break;
+            // break;
             case "FaMobileAlt":
                 return <FaMobileAlt size={"30px"} color={data?.iconColor}/>
-            break;
+            // break;
             default:
                 return
-                break;
+                // break;
         }
     }
     return(

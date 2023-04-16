@@ -11,7 +11,7 @@ const Dashboard = () => {
   return (
     <div className={classes.main}>
       <div className={classes.dashCard}>
-      {dummyData.map((item)=> <DashboardCards data={item}/>)}
+      {dummyData.map((item)=> <DashboardCards key={item?.id} data={item}/>)}
       </div>
     </div>
   );
