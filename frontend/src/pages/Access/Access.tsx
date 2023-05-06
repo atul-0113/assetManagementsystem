@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { UserCard } from "../../components/Cards/UserCard";
 import classes from "./Access.module.scss";
 import {
@@ -38,23 +38,30 @@ const Access = () => {
     },
   ];
   const [enabled] = useStrictDroppable(false);
-  const [accessList,setAccessList] = useState(data)
-  const [revokedList,setRevokedList] = useState([])
-  
-  function handleOnDragEnd(result :any) {
+  const [accessList, setAccessList]: any = useState(data);
+  const [revokedList, setRevokedList]: any = useState([]);
+
+  function handleOnDragEnd(result: any) {
     if (!result.destination) return;
-    console.log(result,"result")
-    if(result.destination.droppableId === "revokedList" && result.source.droppableId === "accessList"){
-      const items:any = Array.from(accessList);
+    console.log(result, "result");
+    if (
+      result.destination.droppableId === "revokedList" &&
+      result.source.droppableId === "accessList"
+    ) {
+      const items: any = Array.from(accessList);
       const [reorderedItem] = items.splice(result.source.index, 1);
-      items.splice(result.destination.index, 0, reorderedItem);
-      setRevokedList(items);
-    }
-    if(result.destination.droppableId === "accessList" && result.source.droppableId === "revokedList"){
-      const items:any = Array.from(revokedList);
-      const [reorderedItem] = items.splice(result.source.index, 1);
-      items.splice(result.destination.index, 0, reorderedItem);
       setAccessList(items);
+      setRevokedList([...revokedList, reorderedItem]);
+    }
+    if (
+      result.destination.droppableId === "accessList" &&
+      result.source.droppableId === "revokedList"
+    ) {
+      const items: any = Array.from(revokedList);
+      const [reorderedItem] = items.splice(result.source.index, 1);
+      // items.splice(result.destination.index, 0, reorderedItem);
+      setRevokedList(items);
+      setAccessList([...accessList, reorderedItem]);
     }
     resetServerContext();
   }
@@ -66,84 +73,98 @@ const Access = () => {
           <input placeholder={"Name"} />
           <input placeholder="Email" />
           <input placeholder="Password" />
-          <button> submit</button>
         </form>
+        <button> submit</button>
       </div>
       <div className={classes.right}>
         <DragDropContext onDragEnd={handleOnDragEnd}>
-        {enabled && 
-        <>
-        <Droppable droppableId="accessList">
-        {(provided) => (
-        <div className={classes.manageAccess}>
-          <h2>Access list</h2>
-          <div className={classes.listing}
-          {...provided.droppableProps}
-          ref={provided.innerRef}
-          >
-            {accessList.length > 0 && accessList.map((item:any, index) => 
-            {return (
-              <Draggable
-              key={index}
-              draggableId={item?.name}
-              index={index}
-            >
-              {(provided)=>(
-                <div ref={provided.innerRef}
-                {...provided.draggableProps}
-                {...provided.dragHandleProps}>
-                <UserCard
-                  key={index}
-                  title={item?.name}
-                  department={item?.department}
-                  image={item?.img}
-                />
-                </div>
-              )}
-              </Draggable>
-            )})}
-          </div>
-        </div>)}
-        </Droppable>
-        <Droppable droppableId="revokedList">
-        {(provided) => (
-        <div className={classes.revoked}>
-          <h2>Revoked list</h2>
-          <div className={classes.listing}
-          {...provided.droppableProps}
-          ref={provided.innerRef}
-          >
-            {!!revokedList && revokedList.map((item:any, index:any) => 
-            {return (
-              <Draggable
-              key={index}
-              draggableId={item?.name}
-              index={index}
-            >
-              {(provided)=>(
-                <div ref={provided.innerRef}
-                {...provided.draggableProps}
-                {...provided.dragHandleProps}>
-              <UserCard
-                key={index}
-                title={item?.name}
-                department={item?.department}
-              />
-              </div>
-              )}
-              </Draggable>
-             )})}
-          </div>
-        </div>)}
-        </Droppable>
-        </>
-        }
-
+          {enabled && (
+            <>
+              <Droppable droppableId="accessList" direction="horizontal">
+                {(provided) => (
+                  <div className={classes.manageAccess}>
+                    <h2>Access list</h2>
+                    <div
+                      className={classes.listing}
+                      {...provided.droppableProps}
+                      ref={provided.innerRef}
+                    >
+                      {accessList?.length > 0 &&
+                        accessList.map((item: any, index: any) => {
+                          return (
+                            <Draggable
+                              key={index}
+                              draggableId={item?.name}
+                              index={index}
+                            >
+                              {(provided) => (
+                                <div
+                                  ref={provided.innerRef}
+                                  {...provided.draggableProps}
+                                  {...provided.dragHandleProps}
+                                >
+                                  <UserCard
+                                    key={index}
+                                    title={item?.name}
+                                    department={item?.department}
+                                    image={item?.img}
+                                  />
+                                </div>
+                              )}
+                            </Draggable>
+                          );
+                        })}
+                      {provided.placeholder}
+                    </div>
+                  </div>
+                )}
+              </Droppable>
+              <Droppable droppableId="revokedList" direction="horizontal">
+                {(provided) => (
+                  <div className={classes.revoked}>
+                    <h2>Revoked list</h2>
+                    <div
+                      className={classes.listing}
+                      {...provided.droppableProps}
+                      ref={provided.innerRef}
+                    >
+                      {!!revokedList &&
+                        revokedList.map((item: any, index: any) => {
+                          return (
+                            <Draggable
+                              key={index}
+                              draggableId={item?.name}
+                              index={index}
+                            >
+                              {(provided) => (
+                                <div
+                                  ref={provided.innerRef}
+                                  {...provided.draggableProps}
+                                  {...provided.dragHandleProps}
+                                >
+                                  <UserCard
+                                    key={index}
+                                    title={item?.name}
+                                    department={item?.department}
+                                    image={item?.img}
+                                  />
+                                </div>
+                              )}
+                            </Draggable>
+                          );
+                        })}
+                      {provided.placeholder}
+                    </div>
+                  </div>
+                )}
+              </Droppable>
+            </>
+          )}
         </DragDropContext>
-      <div className={classes.buttonContainer}>
-        <button>Save</button>
-        <button>Cancel</button>
-      </div>
+        <div className={classes.buttonContainer}>
+          <button>Save</button>
+          <button>Cancel</button>
+        </div>
       </div>
     </div>
   );

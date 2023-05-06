@@ -9,14 +9,24 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 0 0 10px;
+        justify-content: center;
+        padding: 10px;
         // border-radius: 1rem;
         input{
-            margin: 20px;
             height: 2rem;
             width: 20rem;
+            border-radius: 10px 0 0 10px;
             background-color:$themeWhite;
         }
+        i{  
+            margin-top: -1rem;
+            height: 1rem;
+            padding: 1rem;
+            border-radius: 0 10px 10px 0;
+            background-color:$primaryLight;
+            color: aliceblue;
+        }
+        
     }
     .filter{
         font-size: 1.5rem;

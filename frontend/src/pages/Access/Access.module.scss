@@ -2,10 +2,8 @@
 .main{
     display: flex;
     flex-direction: row;
-    height: 75vh;
-    margin-top: 1rem;
+    height: 85vh;
     // box-shadow: 1px 1px 5px 5px rgb(184, 183, 183);
-    padding: 10px;
     border-radius: 1rem;
     .right{
         display: flex;
@@ -17,16 +15,16 @@
         padding: 0 20px 0 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         .manageAccess{
+            display: flex;
             flex-direction: column;
-            height: 40%;
+            height: 45%;
             margin-top: 10px;
-            border-radius: 20px;
-            border: 2px solid $glass-green;
-            background-color: $glass-green;
-            padding: 0 0 10px 10px;
-            // overflow-y: scroll;
+            border-radius: 10px;
+            outline: 2px groove $glass-green;
+            padding: 0 0 0 10px;
+            overflow-y: scroll;
             h2{
-                color: white;
+                color: $glass-green;
             }
             .listing{
                 display: flex;
@@ -39,16 +37,15 @@
         }
         .revoked{
             flex-direction: column;
-            height: 40%; 
-            border-radius: 20px;
+            height: 45%; 
+            border-radius: 10px;
             margin-top: 10px;
             border: 2px solid $glass-red;
-            background-color: $glass-red;
+            // background-color: $glass-red;
             padding: 0 0 10px 10px;
             // width: 100%;
-            // overflow-y: scroll;
             h2{
-                color: white;
+                color: $glass-red;
             }
             .listing{
                 display: flex;
@@ -61,9 +58,29 @@
         }
     }
     .left{
+        display: flex;
+        flex-direction: column;
         height: 100%;
         width: 30%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        h1{
+            color: $primaryDark;
+        }
+        form{
+            width: 100%;
+            input{
+                width: 20vw;
+                margin: 10px;
+            } 
+        }
+        button{
+            align-self: center;
+            margin: 20px 10px;
+            padding: 1vw;
+            width: 50%;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
     }
     .buttonContainer{
         // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  

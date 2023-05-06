@@ -23,8 +23,8 @@ export const SearchHeader = (props: IProps) => {
   return (
     <div className={classes.header}>
       <span>
-        <BiSearchAlt size={"25px"} style={{ color: "black" }} />
         <input placeholder={props?.placeholder ||"Search"} />
+        <i><BiSearchAlt  /></i>
       </span>
 
       <div className={classes.viewSelector}>
