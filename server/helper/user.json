@@ -1,0 +1,203 @@
+[
+    {
+      "name": "Rajesh Kumar",
+      "email": "rajesh.kumar@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "password123",
+      "empCode": 1001,
+      "allotedAssets": 2,
+      "isActive": true
+    },
+    {
+      "name": "Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "isDeleted": false,
+      "role": "Admin",
+      "password": "password456",
+      "empCode": 1002,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Amit Patel",
+      "email": "amit.patel@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "password789",
+      "empCode": 1003,
+      "allotedAssets": 5,
+      "isActive": true
+    },
+    {
+      "name": "Sneha Verma",
+      "email": "sneha.verma@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordabc",
+      "empCode": 1004,
+      "allotedAssets": 1,
+      "isActive": true
+    },
+    {
+      "name": "Vijay Singh",
+      "email": "vijay.singh@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passworddef",
+      "empCode": 1005,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Anjali Gupta",
+      "email": "anjali.gupta@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordghi",
+      "empCode": 1006,
+      "allotedAssets": 3,
+      "isActive": true
+    },
+    {
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordjkl",
+      "empCode": 1007,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Pooja Joshi",
+      "email": "pooja.joshi@example.com",
+      "isDeleted": false,
+      "role": "Admin",
+      "password": "passwordmno",
+      "empCode": 1008,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Deepak Sharma",
+      "email": "deepak.sharma@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordpqr",
+      "empCode": 1009,
+      "allotedAssets": 1,
+      "isActive": true
+    },
+    {
+      "name": "Neha Desai",
+      "email": "neha.desai@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordstu",
+      "empCode": 1010,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Amita Reddy",
+      "email": "amita.reddy@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordvwx",
+      "empCode": 1011,
+      "allotedAssets": 4,
+      "isActive": true
+    },
+    {
+      "name": "Nisha Sharma",
+      "email": "nisha.sharma@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordyz",
+      "empCode": 1012,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Anil Gupta",
+      "email": "anil.gupta@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "password1234",
+      "empCode": 1013,
+      "allotedAssets": 2,
+      "isActive": true
+    },
+    {
+      "name": "Shweta Patel",
+      "email": "shweta.patel@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "password5678",
+      "empCode": 1014,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Manish Singh",
+      "email": "manish.singh@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "password9012",
+      "empCode": 1015,
+      "allotedAssets": 3,
+      "isActive": true
+    },
+    {
+      "name": "Shikha Choudhary",
+      "email": "shikha.choudhary@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "password3456",
+      "empCode": 1016,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Akhil Verma",
+      "email": "akhil.verma@example.com",
+      "isDeleted": false,
+      "role": "Admin",
+      "password": "password7890",
+      "empCode": 1017,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Meera Rao",
+      "email": "meera.rao@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordabcd",
+      "empCode": 1018,
+      "allotedAssets": 1,
+      "isActive": true
+    },
+    {
+      "name": "Vikram Malik",
+      "email": "vikram.malik@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordefgh",
+      "empCode": 1019,
+      "allotedAssets": 0,
+      "isActive": true
+    },
+    {
+      "name": "Geeta Sharma",
+      "email": "geeta.sharma@example.com",
+      "isDeleted": false,
+      "role": "User",
+      "password": "passwordijkl",
+      "empCode": 1020,
+      "allotedAssets": 4,
+      "isActive": true
+    }
+  ]
+  
